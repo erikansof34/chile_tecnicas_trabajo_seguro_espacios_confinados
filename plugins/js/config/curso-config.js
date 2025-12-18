@@ -3,7 +3,7 @@ const CURSO_CONFIG = {
   // Configuración de lecciones del curso
   lecciones: {
     leccion1: {
-      nombre: '1°  Introducción a la ley Karin y su contexto normativo',
+      nombre: '1°  Fundamentos del Trabajo en Espacios Confinados',
       sliders: [
         { router: 'momento1_1', momento: 1 },
         { router: 'momento1_2', momento: 1 },
@@ -23,7 +23,7 @@ const CURSO_CONFIG = {
       }
     },
     leccion2: {
-      nombre: '2° Prevención efectiva del acoso y la violencia laboral',
+      nombre: '2° Equipos y Procedimientos Seguros para Trabajar en Espacios Confinados',
       sliders: [
         { router: 'momento2_1', momento: 2 },
         { router: 'momento2_2', momento: 2 },
@@ -39,7 +39,7 @@ const CURSO_CONFIG = {
       }
     },
     leccion3: {
-      nombre: '3° Tratamiento adecuado de casos según la ley Karin y el protocolo interno',
+      nombre: '3° Cómo actuar frente a una EMERGENCIA',
       sliders: [
         { router: 'momento3_1', momento: 3 },
         { router: 'momento3_2', momento: 3 },
