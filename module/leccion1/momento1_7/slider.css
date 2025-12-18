@@ -1,0 +1,255 @@
+/* Contenedor principal */
+.container-actividad-select-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid de tarjetas */
+.grid-actividad-select-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/* Tarjeta */
+.card-actividad-select-img {
+    perspective: 93.75rem;
+    height: 11.4375rem;
+    cursor: pointer;
+    min-width: 10.9375rem;
+}
+
+.card-front-select-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    transition: background-color .3s ease
+}
+
+.card-image-select-img {
+    height: 7.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative
+}
+
+.card-image-select-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain
+}
+
+.card-content-select-img {
+    padding: .5rem;
+    flex-grow: 1;
+    display: flex;
+    border-radius: 0 0 10px 10px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: background-color .3s ease
+}
+
+.card-desc-select-img {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #8F8F8F
+}
+
+.card-front-select-img.bg-green-personalizado-select-img .card-desc-select-img,
+.card-front-select-img.bg-orange-personalizado-select-img .card-desc-select-img,
+.card-front-select-img.bg-red-personalizado-select-img .card-desc-select-img {
+    color: #fff
+}
+
+.card-select-select-img {
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff
+}
+
+.card-select-select-img.bg-light {
+    background: #f1e6f2
+}
+
+.validation-icon-select-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.875rem;
+    height: 1.875rem;
+    object-fit: contain;
+    opacity: .9;
+    pointer-events: none
+}
+
+/* Colores de fondo de tarjeta según estado */
+.bg-green-personalizado-select-img {
+    background-color: #4caf50
+}
+
+.bg-red-personalizado-select-img {
+    background-color: #f44336
+}
+
+.bg-orange-personalizado-select-img {
+    background-color: #ff9800
+}
+
+.bg-purple-personalizado-select-img {
+    background-color: #0f172a
+}
+
+/* Feedback */
+.feedback-select-img {
+    margin: 0 auto;
+    text-align: center
+}
+
+.feedback-select-img p {
+    font-weight: bold;
+    color: #8f8f8f;
+    text-align: center;
+    font-size: 1rem
+}
+
+.multi-select-feedback-success {
+    background: #32a852;
+    color: #fff;
+    border-radius: .7rem;
+    padding: 1rem 1.5rem;
+    font-weight: normal;
+    font-size: 1.05rem;
+    display: inline-block
+}
+
+.multi-select-feedback-error {
+    background: #e63946;
+    color: #fff;
+    border-radius: .7rem;
+    padding: 1rem 1.5rem;
+    font-weight: normal;
+    font-size: 1.05rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.text-green-select-img {
+    color: #4caf50
+}
+
+.text-red-select-img {
+    color: #f44336
+}
+
+.text-orange-select-img {
+    color: #ff9800
+}
+
+.score-select-img {
+    text-align: center;
+    color: #8f8f8f;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold
+}
+
+.bold-text-select-img {
+    color: #fff
+}
+
+.multi-select-feedback-success p,
+.multi-select-feedback-error p {
+    color: #fff
+}
+
+/* Botones */
+.controls-actividad-select-img {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: .75rem 0
+}
+
+.action-button-select-img {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 9999px;
+    background-color: #c0185d;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease
+}
+
+.action-button-select-img:hover {
+    background-color: #0f172a
+}
+
+.disabled-select-img {
+    background-color: #bfaae7 !important;
+    cursor: not-allowed !important
+}
+
+/* Select con focus */
+select:focus option {
+    color: black !important;
+    background: #fff !important
+}
+
+/* Utilidades */
+.d-none {
+    display: none !important
+}
+
+@media (max-width:1024px) {
+    .grid-actividad-select-img {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (max-width:640px) {
+    .container-actividad-select-img {
+        padding: 0
+    }
+
+    .grid-actividad-select-img {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 .5rem
+    }
+
+    .card-actividad-select-img {
+        height: 15.625rem;
+        min-width: auto;
+        margin: 0 auto;
+        width: 95%
+    }
+
+    .card-front-select-img {
+        width: 100%
+    }
+
+    .card-image-select-img {
+        height: 100%
+    }
+}

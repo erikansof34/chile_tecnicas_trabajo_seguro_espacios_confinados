@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- library bootstrap v.5.0.2 -->
+    <script src="../../plugins/libs/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../plugins/libs/bootstrap/css/bootstrap.css">
+    <script src="../../plugins/libs/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../plugins/css/sofactia.css">
+
+    <!--Montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Libreria iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Estilos del widget -->
+    <link rel="stylesheet" href="../../plugins/libs/assetsWidget/css/widget.css">
+    <!-- Estilos de transcripción -->
+    <link rel="stylesheet" href="../../plugins/libs/component/transcripcion/transcripcion.css">
+</head>
+
+<body class="sf-scroll-y-hidden sf-bg-dark">
+    <!-- content fluid -->
+    <div class="container-fluid pb-5 pb-md-0 px-0 px-md-5 py-0 text-center">
+        <div class="row d-flex justify-content-center align-items-center sf-min-h-vh100 mx-5">
+            <div class="col-lg-4 col-md-3 mt-5 my-md-0 px-0">
+                <h1 class="sf-txt-1xl-700 sf-text-white">Resumen <span class="sf-text-purple">Lección 3</span></h1>
+                <img class="mx-auto sf-img-30 sf-img-md-100 sf-img-sm-30"
+                    src="../leccion3/gif/avatar_hombre_brazos_cruzados.gif" alt="avatar">
+                <div class="audio-center py-4">
+                    <audio class="audio-con-transcripcion" controls data-transcripcion='[
+                            {"end":4.94,"start":0,"text":"La preparación para emergencias en espacios confinados se basa en tres elementos clave,"},
+                            {"end":10.34,"start":4.94,"text":"el plan para respuesta a emergencias, pre, el procedimiento de rescate y los procedimientos"},
+                            {"end":12.14,"start":10.34,"text":"de evacuación."},
+                            {"end":17.02,"start":12.14,"text":"El PRE harmoniza la estructura y los recursos de una organización para responder eficazmente"},
+                            {"end":22.54,"start":17.02,"text":"ante emergencias, identificando los riesgos potenciales y asegurando procedimientos específicos"},
+                            {"end":24.78,"start":22.54,"text":"para cada escenario."},
+                            {"end":29.5,"start":24.78,"text":"Los elementos clave del PRE incluyen la ubicación y vías de acceso expeditas, el nivel de"},
+                            {"end":34.18,"start":29.5,"text":"competencia del personal, la operatividad de los dispositivos y los procedimientos"},
+                            {"end":37.26,"start":34.18,"text":"de ingreso y evacuación de  lesionados."},
+                            {"end":41.98,"start":37.26,"text":"El procedimiento de rescate detalle el proceso a seguir en una situación de rescate,"},
+                            {"end":46.7,"start":41.98,"text":"incluyendo la descripción del sistema a utilizar el montaje y puntos de enclaje, la"},
+                            {"end":51.62,"start":46.7,"text":"conectividad de los equipos, el mecanismo de extracción del paciente y la estabilización"},
+                            {"end":54.62,"start":51.62,"text":"del paciente antes de la evacuación."},
+                            {"end":59.26,"start":54.62,"text":"Los procedimientos de evacuación describen las circunstancias que requieren su activación,"},
+                            {"end":63.66,"start":59.26,"text":"como cambios atmosféricos o estructurales, y deben definir las líneas de actuación"},
+                            {"end":68.5,"start":63.66,"text":"y los métodos de ingreso y generación de alertas para reactivar la actividad de manera"},
+                            {"end":69.5,"start":68.5,"text":"segura."},
+                            {"end":75.06,"start":69.5,"text":"Los simulacros, tanto de escritorio como prácticos, son herramientas importantes para la preparación"},
+                            {"end":77.14,"start":75.06,"text":"ante emergencias."},
+                            {"end":82.26,"start":77.14,"text":"Es fundamental que los trabajadores se comprometan a seguir los líneamientos de seguridad,"},
+                            {"end":86.3,"start":82.26,"text":"aplicar los procedimientos aprendidos y utilizar correctamente el equipo de protección"},
+                            {"end":90.9,"start":86.3,"text":"personal para minimizar los riesgos y prevenir accidentes en espacios confinados."}
+                            ]'>
+                        <source src="../leccion3/resumen_leccion-3.mp3" type="audio/mp3">
+                    </audio>
+                    <i class="transcription-toggle fas fa-closed-captioning audio-estilos"></i>
+                </div>
+                <!-- <audio src="../leccion3/resumen_leccion-3.mp3" controls class="mt-3"></audio> -->
+            </div>
+            <div class="col-lg-8 col-md-9 mt-4 my-md-0">
+                <div class="mx-md-5 mx-4 sf-lh-xs">
+                    <p class="sf-text-white mb-2">¡Bien hecho! Has terminado la Lección 3</p>
+                    <p class="sf-text-white mb-2">¡Revisemos este resumen de lo visto en esta lección!</p>
+                    <embed src="../leccion3/doc/resumen_leccion3.pdf" type="application/pdf" class="pdf-viewer">
+                    <a href="../leccion3/doc/resumen_leccion3.pdf" download="Resumen-Leccion-3.pdf"
+                        class="sf-btn sf-btn-purple">
+                        <i class="fa fa-download"></i>Descargar PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-navigation-container glass-back">
+        <button id="pagIndex" class="btn-navigation btn-navigation--prev" onclick="btnPrev()">
+            <i class="fas fa-angle-left"></i> <span>Anterior</span>
+        </button>
+        <button id="next" class="btn-navigation btn-navigation--next" onclick="btnNext()">
+            <span>Siguiente</span> <i class="fas fa-angle-right"></i>
+        </button>
+    </div>
+
+    <!--library javascript-->
+    <script src="../../plugins/libs/jquery-3.3.1.js"></script>
+    <!-- Script del Widget -->
+    <script src="../../plugins/libs/assetsWidget/js/widget.js"></script>
+    <!-- Script de transcripción -->
+    <script src="../../plugins/libs/component/transcripcion/transcripcion.js"></script>
+
+    <script>
+        function btnPrev() {
+            // window.location.href = "modulo.html";
+            //window.location.href = "modulo.php?course_code=<?= $course_code; ?>";
+            const path = location.pathname.split("/").slice(0, -1).join("/");
+            window.location.href = "./index.html";
+            // window.location.href = path.replace("evaluacion", "compromiso") + "/compromiso.html";
+        };
+
+        function btnNext() {
+            // window.location.href = "modulo.html";
+            //window.location.href = "modulo.php?course_code=<?= $course_code; ?>";
+            const path = location.pathname.split("/").slice(0, -1).join("/");
+            window.location.href = "./evaluacion_leccion.html";
+            // window.location.href = path.replace("evaluacion", "compromiso") + "/compromiso.html";
+        };
+
+        // Inicializar transcripciones cuando el DOM esté listo
+        $(document).ready(function () {
+            if (typeof initTranscripciones === 'function') {
+                initTranscripciones();
+            }
+        });
+    </script>
+    <!-- Contenedor global para transcripciones -->
+    <div id="transcripcion-global"></div>
+</body>
+
+</html>

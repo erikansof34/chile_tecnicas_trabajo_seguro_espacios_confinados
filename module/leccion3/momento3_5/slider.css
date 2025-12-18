@@ -1,0 +1,147 @@
+.border-img {
+    border-radius: .5rem;
+}
+
+/* Estilos para el momento */
+.slider-container,
+.video-container,
+.interactive-container,
+.quiz-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slide-content,
+.video-wrapper,
+.interactive-content,
+.quiz-content {
+    margin-top: 20px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.drag-drop-area {
+    min-height: 200px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.quiz-content .options {
+    margin-top: 15px;
+}
+
+.quiz-content .options label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Estilos para la actividad de selección */
+.select-container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.select-activity {
+    text-align: justify;
+}
+
+.select {
+    border: 0.125rem solid #afafaf;
+    border-radius: 0.625rem;
+    padding: 0.0625rem 0.5rem;
+    font-size: 0.875rem;
+    color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem;
+    min-width: 7.5rem;
+    background-color: white;
+}
+
+.select:focus {
+    border-color: #6b21a8;
+}
+
+.select-item {
+    margin-bottom: 0.75rem;
+}
+
+.select-text {
+    line-height: 1.6;
+}
+
+.select-feedback {
+    border-radius: 0.375rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.select-correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.select-incorrect {
+    background-color: #F44336;
+    color: white;
+}
+
+.select-results {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.select-selected {
+    background-color: #6e3cd2;
+    color: white;
+    border-color: #6e3cd2;
+}
+
+.select-correct-answer {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border-color: #388E3C !important;
+}
+
+.select-incorrect-answer {
+    background-color: #F44336 !important;
+    color: white !important;
+    border-color: #D32F2F !important;
+}
+
+.select-error {
+    color: #D32F2F;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+}
+
+.select-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.select-validate,
+.select-reset {
+    margin: 0 0.25rem;
+}
+
+.select-reset:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

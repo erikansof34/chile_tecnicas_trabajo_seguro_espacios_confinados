@@ -1,0 +1,72 @@
+.border-img {
+  border-radius: .5rem;
+}
+
+/* Estilos para actividad de selección múltiple */
+.ctItem {
+  background: #fcfcfc;
+  padding: 0.9375rem;
+  border-radius: 0.625rem;
+  margin-top: .5rem;
+  max-width: 100%;
+  box-shadow: 0 0 0.625rem #0000004d;
+  text-align: left;
+}
+
+.opciones-multiple .opcion-multiple {
+  background: #ebebeb;
+  color: #8f8f8f;
+  padding: 0.625rem 0.625rem 0.625rem 0.9375rem;
+  border-radius: 0.3125rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.opciones-multiple .opcion-multiple:hover {
+  background: #d0d0d0;
+}
+
+.opciones-multiple .opcion-multiple.seleccionada {
+  background: #08244c;
+  color: #fff;
+  transform: scale(1.01);
+  border: 0.125rem solid #08244c;
+}
+
+.opciones-multiple .opcion-multiple.correcta {
+  background: #4caf50;
+  color: #fff;
+}
+
+.opciones-multiple .opcion-multiple.incorrecta {
+  background: #f44336;
+  color: #fff;
+}
+
+.multi-select-feedback-success {
+  background: #32a852;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 1rem 1.5rem;
+  font-weight: normal;
+  font-size: 1.05rem;
+  display: inline-block;
+}
+
+.multi-select-feedback-error {
+  background: #e63946;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 1rem 1.5rem;
+  font-weight: normal;
+  font-size: 1.05rem;
+  display: inline-block;
+}
+
+.btn-validar-multiple:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

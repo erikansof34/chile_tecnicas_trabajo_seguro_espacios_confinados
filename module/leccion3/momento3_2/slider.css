@@ -1,0 +1,285 @@
+.actividad-container-dragdrop-audio-v2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2.5rem
+}
+
+.rows-container-dragdrop-audio-v2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%
+}
+
+.row-dragdrop-audio-v2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto
+}
+
+.items-dragdrop-audio-v2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative
+}
+
+.draggable-option-dragdrop-audio-v2 {
+    width: 11.25rem;
+    min-width: 10rem;
+    height: 3.75rem;
+    background-color: #c0185d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    text-align: center;
+    cursor: grab;
+    font-weight: 600;
+    padding: 0 .625rem
+}
+
+.drop-area-dragdrop-audio-v2 {
+    width: 11.25rem;
+    height: 3.75rem;
+    border: 2px dashed #a7a7a7;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s, border-color .3s;
+    padding: 0 .625rem;
+    text-align: center;
+    position: relative;
+    overflow: visible
+}
+
+.drop-area-filled-dragdrop-audio-v2 {
+    background-color: #c0185d;
+    border-color: #c0185d
+}
+
+.drop-area-correct-dragdrop-audio-v2 {
+    background-color: #4caf50 !important;
+    border-color: #4caf50 !important
+}
+
+.drop-area-incorrect-dragdrop-audio-v2 {
+    background-color: #f44336 !important;
+    border-color: #f44336 !important
+}
+
+.drop-content-dragdrop-audio-v2 {
+    color: #fff;
+    font-weight: 600
+}
+
+.verification-image-dragdrop-audio-v2 {
+    width: 3.375rem;
+    height: 3.375rem;
+    position: absolute;
+    top: 50%;
+    left: -3.75rem;
+    transform: translateY(-50%);
+    opacity: 1;
+    z-index: 2;
+    pointer-events: none
+}
+
+.audio-card-dragdrop-audio-v2 {
+    width: 19.4375rem;
+    height: 4.25rem;
+    background-color: #f3f4f6;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s, border-color .3s;
+    border: 2px solid transparent
+}
+
+/* estilos de audio se heredan globalmente; no aplicar reglas locales */
+
+.audio-card-dragdrop-audio-v2.drop-area-correct-dragdrop-audio-v2 {
+    background-color: #4caf50;
+    border-color: #4caf50
+}
+
+.audio-card-dragdrop-audio-v2.drop-area-incorrect-dragdrop-audio-v2 {
+    background-color: #f44336;
+    border-color: #f44336
+}
+
+.buttons-dragdrop-audio-v2 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem
+}
+
+.btn-accion-dragdrop-audio-v2 {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 9999px;
+    background-color: #c0185d;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s
+}
+
+.btn-accion-dragdrop-audio-v2:hover {
+    background-color: #0f172a
+}
+
+.disabled-dragdrop-audio-v2 {
+    background-color: #bfaae7 !important;
+    cursor: not-allowed !important
+}
+
+.message-dragdrop-audio-v2 {
+    padding: .625rem;
+    color: #fff;
+    border-radius: .3125rem;
+    text-align: center;
+    width: 100%
+}
+
+.message-success-dragdrop-audio-v2 {
+    background-color: #4caf50
+}
+
+.message-error-dragdrop-audio-v2 {
+    background-color: #f44336
+}
+
+.audio-wrapper-dragdrop-audio-v2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .5rem
+}
+
+.transcription-toggle {
+    transition: all .3s ease;
+    padding: .5rem;
+    border-radius: 50%
+}
+
+.transcription-toggle:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1)
+}
+
+.d-none {
+    display: none !important
+}
+
+.hidden-keep-space-dragdrop-audio-v2 {
+    visibility: hidden
+}
+
+.select-dragdrop-audio-v2 {
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1rem;
+    margin-top: .75rem
+}
+
+.select-correct-dragdrop-audio-v2 {
+    background-color: #90ee90;
+    border-color: #90ee90;
+    color: #0f172a
+}
+
+.select-incorrect-dragdrop-audio-v2 {
+    background-color: #ffb6c1;
+    border-color: #ffb6c1;
+    color: #0f172a
+}
+
+.audio-center {
+    margin-left: 0.1rem;
+}
+
+.actividad-container-dragdrop-audio-v2 .audio-center audio {
+    width: 200px;
+    height: 54px
+}
+
+@media (max-width:48rem) {
+    .row-dragdrop-audio-v2 {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .items-dragdrop-audio-v2 {
+        width: 100%;
+        justify-content: space-between;
+        gap: .75rem
+    }
+
+    .audio-card-dragdrop-audio-v2 {
+        width: 100%;
+        margin-top: .625rem
+    }
+
+    .draggable-option-dragdrop-audio-v2 {
+        position: static;
+        width: 48%;
+        min-width: auto;
+        height: 2.5rem;
+        padding: 0 .5rem
+    }
+
+    .drop-area-dragdrop-audio-v2 {
+        position: relative;
+        left: auto;
+        width: 48%;
+        height: 2.5rem
+    }
+
+    .verification-image-dragdrop-audio-v2 {
+        left: auto;
+        right: -2rem
+    }
+
+    .actividad-container-dragdrop-audio-v2 .audio-center audio {
+        width: 300px;
+        height: 50px
+    }
+    .mobile-card-dragdrop-audio-v2{
+        position:relative;
+        background:#fff;
+        border-radius:.5rem;
+        box-shadow:0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+        padding:.75rem;
+        border:1px solid #e5e7eb;
+        width:100%
+    }
+    .mobile-card-correct{
+        background:#4caf50 !important;
+        border-color:#4caf50 !important
+    }
+    .mobile-card-incorrect{
+        background:#f44336 !important;
+        border-color:#f44336 !important
+    }
+    .mobile-card-icon-dragdrop-audio-v2{
+        position:absolute;
+        top:.25rem;
+        right:.25rem;
+        width:1.25rem;
+        height:1.25rem;
+        object-fit:contain
+    }
+}

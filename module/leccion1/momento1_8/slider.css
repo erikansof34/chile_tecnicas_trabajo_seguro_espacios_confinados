@@ -1,0 +1,135 @@
+.contenido_sld8_nivel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.imagen-botones_sld8_nivel {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: url('../momento1_8/img/tipos_espacios_confinados_lec1_sld8.webp') no-repeat center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 3%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.boton_sld8_nivel {
+    position: absolute;
+    width: 100px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: none;
+}
+
+
+.tarjetas_sld8_nivel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tarjetas_sld8_nivel p {
+    font-size: 16px;
+}
+
+.tarjetas_sld8_nivel audio {
+    width: 100%;
+}
+
+.card_sld8_nivel {
+    display: none;
+    background: #fff;
+    color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: left;
+}
+
+.card_sld8_nivel p {
+    color: #fff;
+}
+
+.boton-A-sld8 {
+    top: 55%;
+    left: 75%;
+    color: #FF0000;
+    ;
+    background-color: #fff;
+    border: 2px solid #FF0000;
+}
+
+.boton-A-sld8:hover {
+    color: #fff;
+    background-color: #FF0000;
+    border: 2px solid #fff;
+}
+
+.boton-B-sld8 {
+    top: 5%;
+    left: 40%;
+    color: #FFC000;
+    background-color: #fff;
+    border: 2px solid #FFC000;
+}
+
+.boton-B-sld8:hover {
+    color: #fff;
+    background-color: #FFC000;
+    border: 2px solid #fff;
+}
+
+.boton-C-sld8 {
+    top: 55%;
+    left: 3%;
+    color: #064422;
+    background-color: #fff;
+    border: 2px solid #064422;
+}
+
+.boton-C-sld8:hover {
+    color: #fff;
+    background-color: #064422;
+    border: 2px solid #fff;
+}
+
+
+
+@media (max-width: 768px) {
+    .card_sld8_nivel {
+        width: 100%;
+        margin: 20px 5px;
+    }
+
+    .imagen-botones_sld8_nivel {
+        height: 200px;
+    }
+
+    .boton-A-sld8 {
+        top: 55%;
+        left: 65%;
+    }
+
+    .boton-B-sld8 {
+        top: 10%;
+        left: 30%;
+    }
+
+    .boton-C-sld8 {
+        top: 55%;
+        left: -5%;
+    }
+}

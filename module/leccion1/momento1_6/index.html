@@ -1,0 +1,151 @@
+<section class="row">
+  <div class="animate__animated animate__fadeInLeftBig col-12 sf-bg-dark sf-ct-col">
+    <img src="../../assets/img/avatars/avatar_hombre_mirando_lista_fondo_azul.webp" alt="avatar"
+      class="sf-img-xl-10 mx-auto d-none d-xl-block">
+    <div class="ms-xl-4 mx-xl-0">
+      <h1 class="sf-text-white text-center">
+        Pensemos… ¿Cuáles son los riesgos asociados al trabajo en Espacios
+        Confinados?</span>
+      </h1>
+      <img src="../../assets/img/avatars/avatar_hombre_mirando_lista_fondo_azul.webp" alt="avatar"
+        class="sf-img-80 sf-img-sm-60 sf-img-md-40 sf-img-lg-30 mx-auto d-xl-none mb-2">
+      <p class="sf-text-white text-justify">
+        Siempre que ingreses a un <strong><em>ESPACIO CONFINADO,</em></strong> estarás expuesto a uno o varios de estos
+        riesgos. Escucha atentamente la
+        información
+      </p>
+    </div>
+  </div>
+
+  <div class="animate__animated animate__fadeInRightBig col-12 p-0 d-flex justify-content-center">
+    <div class="sf-cb-row">
+      <div class="container obs-seg-mom3-8">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 pt-2rem">
+            <div class="my-4 my-lg-0 text-center">
+              <i class="hipt hipt-light mb-3">
+                Observa detenidamente la imagen y haz clic en los puntos para identificar los posibles riesgos
+                <i class="icon-inline icon-inline--start fa-solid fa-arrow-turn-down"></i>
+              </i>
+              <div class="animate__animated animate__flipInX animate__delay-1s imagen-botones_obs-seg-mom3-8">
+                <button class="boton_obs-seg-mom3-8 boton-1" onclick="mostrarCardObsSegMom38('1')">1</button>
+                <button class="boton_obs-seg-mom3-8 boton-2" onclick="mostrarCardObsSegMom38('2')">2</button>
+                <button class="boton_obs-seg-mom3-8 boton-3" onclick="mostrarCardObsSegMom38('3')">3</button>
+                <button class="boton_obs-seg-mom3-8 boton-4" onclick="mostrarCardObsSegMom38('4')">4</button>
+                <button class="boton_obs-seg-mom3-8 boton-5" onclick="mostrarCardObsSegMom38('5')">5</button>
+              </div>
+              <button class="sf-btn sf-btn-purple obs-seg-mom3-8" data-bs-toggle="modal"
+                data-bs-target="#obs-seg-mom3-8-recuerda">
+                <i class="fa fa-question-circle"></i> Recuerda...</button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 pt-2rem">
+            <div class="my-4 my-lg-0 text-center">
+              <i class="hipt hipt-light mb-3">
+                Escucha con atención cada uno de los audios
+                <i class="icon-inline icon-inline--start fa-solid fa-arrow-turn-down"></i>
+              </i>
+              <div class="tarjetas_obs-seg-mom3-8">
+                <div id="card-1_obs-seg-mom3-8" class="card_obs-seg-mom3-8">
+                  <p>1. Falta de oxígeno</p>
+                  <div class="audio-center-p2">
+                    <audio id="audio-1_obs-seg-mom3-8" class="audio-con-transcripcion" controls data-transcripcion='[
+                        {"end":1.5,"start":0,"text":"Falta de oxígeno."},
+                        {"end":5.88,"start":1.5,"text":"Puede ser causada por la ventilación insuficiente o el desplazamiento"},
+                        {"end":7.52,"start":5.88,"text":"del aire por otros gases."}
+                        ]'>
+                      <source src="./momento1_6/audio/lec1_sld6_falta_oxigeno.mp3" type="audio/mp3">
+                    </audio>
+                    <i class="transcription-toggle fas fa-closed-captioning audio-estilos"></i>
+                  </div>
+                </div>
+
+                <div id="card-2_obs-seg-mom3-8" class="card_obs-seg-mom3-8">
+                  <p>2. Presencia de gases tóxicos o explosivos</p>
+                  <div class="audio-center-p2">
+                    <audio id="audio-2_obs-seg-mom3-8" class="audio-con-transcripcion" controls data-transcripcion='[
+                        {"end":2.9,"start":0,"text":"Presencia de gases tóxicos o explosivos."},
+                        {"end":6.5,"start":2.9,"text":"Los espacios confinados pueden acumular sustancias"},
+                        {"end":10.6,"start":6.5,"text":"peligrosas, como el monóxido de carbono o gases inflamables."}
+                        ]'>
+                      <source src="./momento1_6/audio/lec1_sld6_gases_toxicos.mp3" type="audio/mp3">
+                    </audio>
+                    <i class="transcription-toggle fas fa-closed-captioning audio-estilos"></i>
+                  </div>
+                </div>
+
+                <div id="card-3_obs-seg-mom3-8" class="card_obs-seg-mom3-8">
+                  <p>3. Atmósferas explosivas</p>
+                  <div class="audio-center-p2">
+                    <audio id="audio-3_obs-seg-mom3-8" class="audio-con-transcripcion" controls data-transcripcion='[
+                        {"end":2.4,"start":0,"text":"Atmósferas explosivas."},
+                        {"end":7.56,"start":2.4,"text":"La combinación de ciertos gases o vapores con el aire, puede desencadenar explosiones."}
+                        ]'>
+                      <source src="./momento1_6/audio/lec1_sld6_atmosferas.mp3" type="audio/mp3">
+                    </audio>
+                    <i class="transcription-toggle fas fa-closed-captioning audio-estilos"></i>
+                  </div>
+                </div>
+
+                <div id="card-4_obs-seg-mom3-8" class="card_obs-seg-mom3-8">
+                  <p>4. Riesgo de atrapamiento o ahogamiento</p>
+                  <div class="audio-center-p2">
+                    <audio id="audio-4_obs-seg-mom3-8" class="audio-con-transcripcion" controls data-transcripcion='[
+                        {"end":2.9,"start":0,"text":"Riesgo de atrapamiento o ahogamiento"},
+                        {"end":7.2,"start":2.9,"text":"En excavaciones tanques con líquidos o materiales granulados."}
+                        ]'>
+                      <source src="./momento1_6/audio/lec1_sld6_riesgo_atrapamiento.mp3" type="audio/mp3">
+                    </audio>
+                    <i class="transcription-toggle fas fa-closed-captioning audio-estilos"></i>
+                  </div>
+                </div>
+
+                <div id="card-5_obs-seg-mom3-8" class="card_obs-seg-mom3-8">
+                  <p>5. Riesgo biológico</p>
+                  <div class="audio-center-p2">
+                    <audio id="audio-5_obs-seg-mom3-8" class="audio-con-transcripcion" controls data-transcripcion='[
+                        {"end":1,"start":0,"text":"Riesgo biológico"},
+                        {"end":6.76,"start":1,"text":"Virus, bacterias, fluidos o excrementos. Deribados de las sustancias"},
+                        {"end":10.12,"start":6.76,"text":"que se acumulan, o transitan en el espacio confinado."}
+                        ]'>
+                      <source src="./momento1_6/audio/lec1_sld6_riesgo_biologico.mp3" type="audio/mp3">
+                    </audio>
+                    <i class="transcription-toggle fas fa-closed-captioning audio-estilos"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="obs-seg-mom3-8-recuerda" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> Recuerda...</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center mb-4">
+          <img src="../../assets/img/botones/recuerda_icono.webp" alt="Recuerda" class="sf-img-20 mx-auto mb-3">
+          <p class="text-justify">
+            Otros riesgos asociados con el trabajo en espacios confinados son de tipo psicosocial, como estrés o
+            angustia, o también
+            relacionados con condiciones de seguridad, por deficiencias en el ambiente de trabajo, o en la
+            infraestructura en donde
+            está el espacio confinado.
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+/* Estilos para el momento */
+.slider-container,
+.video-container,
+.interactive-container,
+.quiz-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slide-content,
+.video-wrapper,
+.interactive-content,
+.quiz-content {
+    margin-top: 20px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.drag-drop-area {
+    min-height: 200px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.quiz-content .options {
+    margin-top: 15px;
+}
+
+.quiz-content .options label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.preguntas_01 .ctItem {
+    background: #fcfcfc;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+    margin-top: .5rem;
+    max-width: 100%;
+    box-shadow: 0 0 0.625rem #0000004d;
+    text-align: left;
+}
+
+.opciones-pregunta .opcion-respuesta {
+    background: #ebebeb;
+    color: #8f8f8f;
+    padding: 0.625rem 0.625rem 0.625rem 0.9375rem;
+    border-radius: 0.3125rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.opciones-pregunta .opcion-respuesta:hover {
+    background: #d0d0d0;
+}
+
+.opciones-pregunta .opcion-respuesta.act {
+    background: #08244c;
+    color: #fff;
+    transform: scale(1.01);
+    border: 0.125rem solid #08244c;
+}
+
+.opciones-pregunta .opcion-respuesta.true {
+    background: #4caf50;
+    color: #fff;
+}
+
+.opciones-pregunta .opcion-respuesta.false {
+    background: #f44336;
+    color: #fff;
+}
+
+.multi-select-feedback-success {
+    background: #32a852;
+    color: #fff;
+    border-radius: 0.7rem;
+    padding: 1rem 1.5rem;
+    font-weight: normal;
+    font-size: 1.05rem;
+    display: inline-block;
+}
+
+.multi-select-feedback-error {
+    background: #e63946;
+    color: #fff;
+    border-radius: 0.7rem;
+    padding: 1rem 1.5rem;
+    font-weight: normal;
+    font-size: 1.05rem;
+    display: inline-block;
+}
+
+.multi-select-feedback-warning {
+    background: #ff8c00;
+    color: #fff;
+    border-radius: 0.7rem;
+    padding: 1rem 1.5rem;
+    font-weight: normal;
+    font-size: 1.05rem;
+    display: inline-block;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 0.75rem;
+    background: #e0e0e0;
+    border-radius: 0.5625rem;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: #08244c;
+    border-radius: 0.5625rem;
+    transition: width 0.3s;
+}
+
+/* Ocultar sin afectar el layout (mantener espacio) */
+.hidden-keep-space-nav {
+    visibility: hidden;
+    pointer-events: none;
+}

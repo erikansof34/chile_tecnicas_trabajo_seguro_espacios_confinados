@@ -1,0 +1,119 @@
+.contenido_sld11_espacios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.imagen-botones_sld11_espacios {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('../momento2_2/img/como_senalizar_adecuadamente_espacio_confinado.webp') no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.boton_sld11_espacios {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #6e3cd2;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.boton_sld11_espacios:hover {
+  background-color: #fff;
+  color: var(--purple);
+}
+
+.tarjetas_sld11_espacios {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tarjetas_sld11_espacios p {
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.tarjetas_sld11_espacios audio {
+  width: 100%;
+}
+
+.card_sld11_espacios {
+  display: none;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  padding: 15px 15px;
+  border-radius: 5px;
+  margin: 10px;
+  align-items: flex-start;
+}
+
+.card_sld11_espacios audio {
+  /* width: 60%;
+  float: right; */
+}
+
+.img-card {
+  float: left;
+  width: 40%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 2%;
+}
+
+.boton-A {
+  top: 20%;
+  left: 10%;
+}
+
+.boton-B {
+  top: 25%;
+  left: 30%;
+}
+
+.boton-C {
+  top: 15%;
+  left: 45%;
+}
+
+.boton-D {
+  top: 30%;
+  left: 60%;
+}
+
+.boton-E {
+  top: 55%;
+  left: 70%;
+}
+
+@media (max-width: 768px) {
+  .card_sld11_espacios {
+    width: 100%;
+    margin: 20px 5px;
+  }
+
+  .img-card {
+    float: left;
+    width: 100%;
+  }
+}
